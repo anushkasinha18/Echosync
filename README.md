@@ -22,8 +22,8 @@ npm run dev   # starts at http://localhost:5000
 Install & run the client:
 cd ../client
 npm install
-npm run dev   # Vite at http://localhost:5173
-Open the app: Go to http://localhost:5173 in your browser.
+npm run dev   # Vite at http://localhost:5170
+Open the app: Go to http://localhost:5170 in your browser.
 Enter your name, click Create new room, and share the URL with collaborators.
 Or paste a Room ID to join an existing room.
 Step-by-Step Implementation Guide
@@ -51,7 +51,7 @@ Editor.jsx wraps CodeMirror 6 with JavaScript+JSX syntax support.
 A tiny debounce prevents sending every keystroke as a WebSocket packet.
 4. Configure ports & CORS
 Server runs at http://localhost:5000 with CORS open to all origins (for local dev).
-Client (Vite) runs at http://localhost:5173 (fixed via vite.config.js to avoid port confusion).
+Client (Vite) runs at http://localhost:5170 (fixed via vite.config.js to avoid port confusion).
 5. Test with multiple tabs
 Open two browser tabs to the same room URL and watch changes sync instantly.
 Environment Variables
