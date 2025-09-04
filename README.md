@@ -7,7 +7,7 @@ Features
 ⚡ Real-time code syncing via WebSockets (Socket.IO)
 🧩 Code editor powered by CodeMirror 6 (JavaScript + JSX mode)
 🧱 Simple Node/Express server with in-memory state
-🧪 Local dev-friendly setup with Vite (port 5173) & server (port 5000)
+🧪 Local dev-friendly setup with Vite (port 5170) & server (port 5000)
 Note: This template keeps room state in memory. For production, back the document with a database and consider CRDT/OT (like Yjs/ShareDB) for conflict-free editing.
 
 Prerequisites
@@ -66,7 +66,7 @@ Persist room documents in a database.
 For conflict-free editing at scale, layer in CRDT (e.g., Yjs) or OT.
 Add auth & per-room ACLs for private sessions.
 Troubleshooting
-Blank page or wrong port? This project pins Vite to 5173. Make sure you open http://localhost:5173.
+Blank page or wrong port? This project pins Vite to 5173. Make sure you open http://localhost:5170.
 If you see CORS errors, verify VITE_SERVER_URL matches your server URL and that the server is running.
 Node version < 18 can cause dependency issues. Upgrade if needed.
 Happy hacking!
