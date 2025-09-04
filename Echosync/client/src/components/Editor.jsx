@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Editor from "@monaco-editor/react";
 
-const CodeEditor = ({ code, onChange, language = "javascript", theme = "vs-dark", userName, roomId }) => {
+const CodeEditor = ({ value, onChange, language = "javascript", theme = "vs-dark", userName, roomId }) => {
   const editorRef = useRef(null);
 
   // Save editor instance
@@ -33,7 +33,7 @@ const CodeEditor = ({ code, onChange, language = "javascript", theme = "vs-dark"
       <Editor
         height="100%"
         defaultLanguage={language}
-        defaultValue={code}
+        value={value}
         theme={theme}
         onChange={onChange}
         onMount={handleEditorDidMount}
