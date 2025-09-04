@@ -98,7 +98,8 @@ export default function Room() {
           <div className="spacer" />
           <span className="status">{status}</span>
         </div>
-        <Editor value={code} onChange={handleChange} />
+        <Editor value={code} onChange={handleChange}
+          userName={username} roomId={roomId} />/>
         <footer>EchoSync • Built with React, Vite &amp; Socket.IO</footer>
       </section>
     </div>
